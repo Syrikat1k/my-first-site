@@ -94,7 +94,7 @@ const holidaysData = {
 
     // 4: Май
     4: {
-        // ...
+        7:[ { ru: "День рождения Вовы!", en: "Vladimir's birthday!"}]
     },
 
     // 5: Июнь
