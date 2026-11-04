@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Праздники по месяцам</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/jpg" href="favicon.jpg">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <!-- Панель управления -->
+    <div class="controls">
+        <button class="lang-btn" id="lang-btn" onclick="toggleLanguage()">EN</button>
+        <label class="theme-switch">
+            <input type="checkbox" id="theme-checkbox" onchange="toggleTheme()">
+            <span class="slider"></span>
+        </label>
+    </div>
+
+    <!-- ГЛАВНЫЙ ЭКРАН -->
+    <div class="main-screen" id="main-screen">
+        <h1 id="main-title">Праздники по месяцам</h1>
+        <div class="months-grid" id="months-grid">
+            <!-- Карточки генерируются JS -->
+        </div>
+    </div>
+
+    <!-- ЭКРАН КАЛЕНДАРЯ -->
+    <div class="calendar-screen hidden" id="calendar-screen">
+        <div class="calendar-header">
+            <h2 id="calendar-title">Январь</h2>
+            <button class="back-btn" id="btn-back-main" onclick="goBackToMain()">← Назад к месяцам</button>
+        </div>
+        <div class="calendar">
+            <div class="calendar-day-name" id="day-mon">Пн</div>
+            <div class="calendar-day-name" id="day-tue">Вт</div>
+            <div class="calendar-day-name" id="day-wed">Ср</div>
+            <div class="calendar-day-name" id="day-thu">Чт</div>
+            <div class="calendar-day-name" id="day-fri">Пт</div>
+            <div class="calendar-day-name" id="day-sat">Сб</div>
+            <div class="calendar-day-name" id="day-sun">Вс</div>
+            <div id="calendar-days-container" style="display: contents;"></div>
+        </div>
+    </div>
+
+    <!-- ЭКРАН СПИСКА ПРАЗДНИКОВ -->
+    <div class="holidays-screen hidden" id="holidays-screen">
+        <div class="holidays-header">
+            <h2 id="holiday-date-title">1 Января</h2>
+            <p id="holiday-subtitle">Праздники и памятные даты</p>
+            <button class="back-btn" id="btn-back-cal" onclick="goBackToCalendar()">← Назад к календарю</button>
+        </div>
+        <ul class="holidays-list" id="holidays-list"></ul>
+    </div>
+</body>
+</html>
