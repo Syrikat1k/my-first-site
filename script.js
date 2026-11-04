@@ -37,11 +37,7 @@ const translations = {
 
 
   
-  4: {
-  7: [
-  {ru: "День Рождения Вовы", en: "Vladimir's birthday"}
-  ]
-  }
+
 
 
 
@@ -104,9 +100,12 @@ const holidaysData = {
     },
 
     // 4: Май
-    4: {
-        // ...
-    },
+4: {
+  7: [
+  {ru: "День Рождения Вовы", en: "Vladimir's birthday"}
+  ]
+  }
+    
 
     // 5: Июнь
     5: {
