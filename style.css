@@ -473,5 +473,5 @@
             to { opacity: 1; transform: translateY(0); }
         }
 #main-title::after{
-    content: ' (2027)';
+    content: '  (2027)';
 }
